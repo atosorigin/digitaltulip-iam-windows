@@ -1,0 +1,30 @@
+rootdomain: "{{env}}.digitaltulip.net"
+fqdn: "ad.{{env}}.digitaltulip.net"
+idpfqdn: "iam.{{env}}.digitaltulip.net"
+fqdsn: "DC={{env}},DC=digitaltulip,DC=net"
+netbios: "{{env}}digitaltulip"
+users:
+  adamcooper:
+    firstname: Adam
+    surname: Cooper
+    email: adam.cooper@{{rootdomain}}
+  arthurbrown:
+    firstname: Arthur
+    surname: Brown
+    email: arthur.brown@ms.{{rootdomain}}
+  johnsmith:
+    firstname: John
+    surname: Smith
+    email: john.smith@{{rootdomain}}
+  jennybates:
+    firstname: Jenny
+    surname: Bates
+    email: jenny.bates@ms.{{rootdomain}}
+  vikramuddin:
+    firstname: Vikram
+    surname: Uddin
+    email: vikram.uddin@ms.{{rootdomain}}
+  sarahwilson:
+    firstname: Sarah
+    surname: Wilson
+    email: sarah.wilson@ms.{{rootdomain}}

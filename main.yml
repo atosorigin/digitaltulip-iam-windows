@@ -1,0 +1,10 @@
+---
+
+# Install Windows elements of IAM solution
+- hosts: tag_class_{{env}}-adserver
+  roles:
+   - activedirectory
+
+#- hosts: tag_class_{{env}}-midserver
+#  roles:
+#   - midserver
