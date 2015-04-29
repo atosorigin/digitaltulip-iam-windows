@@ -1,8 +1,9 @@
-param([string]$firstname = "",[string]$surname="", [string]$email="",  [string]$idpfqdn="", [string]$initialpassword="")
+param([string]$firstname = "",[string]$surname="", [string]$email="", [string]$idpfqdn="", [string]$pwd="" )
 
 Import-Module activedirectory
 
-$Displayname = $firstname + " " + $surname            
+$Displayname = $firstname + " " + $surname
+$initialpassword = pwd
 $SamAccountName    = $firstname.ToLower() + "." + $surname.ToLower()           
 $UserPrincipalName = $email  
 $sunfmsaml2nameidinfokey  = "https://" + $idpfqdn + "/openam|urn:federation:MicrosoftOnline|" +  $SamAccountName
