@@ -2,6 +2,8 @@
 
 # Install Windows elements of IAM solution
 - hosts: tag_class_{{env}}-adserver
+  vars_files:
+   - enc.yml
   roles:
    - activedirectory
 
