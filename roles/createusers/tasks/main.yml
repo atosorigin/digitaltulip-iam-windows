@@ -1,4 +1,4 @@
 ---
 - name: Create Users
-  script: add_user.ps1 {{item.value.firstname}} {{item.value.surname}} {{item.value.email}} {{idpfqdn}}
+  script: add_user.ps1 {{item.value.firstname}} {{item.value.surname}} {{item.value.email}} {{idpfqdn}} {{initialpassword}}
   with_dict: users 
