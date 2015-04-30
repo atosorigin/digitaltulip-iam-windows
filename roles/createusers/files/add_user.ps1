@@ -11,4 +11,7 @@ $sunfmsaml2nameidinfo  = "https://" + $idpfqdn +  "/openam|urn:federation:Micros
 
 $setpass = ConvertTo-SecureString -AsPlainText $initialpassword -force  
 
-New-ADUser -Name $Displayname -DisplayName $Displayname -SamAccountName $SamAccountName -GivenName $firstname -Surname $surname -EmailAddress $email -UserPrincipalName $UserPrincipalName -OtherAttributes  @{'sun-fm-saml2-nameid-infokey'= $sunfmsaml2nameidinfokey; 'sun-fm-saml2-nameid-info'=$sunfmsaml2nameidinfo} -AccountPassword $setpass -Enabled 1 -ChangePasswordAtLogon 0 -PasswordNeverExpires 1
+New-ADUser -Name $Displayname -DisplayName $Displayname -SamAccountName $SamAccountName -GivenName $firstname -Surname $surname -EmailAddress $email -UserPrincipalName $UserPrincipalName -AccountPassword $setpass -Enabled 1 -ChangePasswordAtLogon 0 -PasswordNeverExpires 1
+
+#-OtherAttributes  @{'sun-fm-saml2-nameid-infokey'= $sunfmsaml2nameidinfokey; 'sun-fm-saml2-nameid-info'=$sunfmsaml2nameidinfo}
+# Removed until finding a way of automatically loading the fr schema into AD
