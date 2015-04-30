@@ -3,7 +3,7 @@ param([string]$firstname = "",[string]$surname="", [string]$email="", [string]$i
 Import-Module activedirectory
 
 $Displayname = $firstname + " " + $surname
-$initialpassword = pwd
+$initialpassword = $pwd
 $SamAccountName    = $firstname.ToLower() + "." + $surname.ToLower()           
 $UserPrincipalName = $email  
 $sunfmsaml2nameidinfokey  = "https://" + $idpfqdn + "/openam|urn:federation:MicrosoftOnline|" +  $SamAccountName
