@@ -1,4 +1,4 @@
-param([string]$firstname = "",[string]$surname="", [string]$email="", [string]$idpfqdn="", [string]$pwd="" )
+param([string]$firstname = "",[string]$surname="", [string]$email="", [string]$idpfqdn="", [string]$pwd="Tul1p1234" )
 
 Import-Module activedirectory
 
