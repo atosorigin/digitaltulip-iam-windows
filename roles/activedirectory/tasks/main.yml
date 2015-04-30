@@ -14,8 +14,4 @@
     reboot: yes
 - name: Add AD Forest
   script: install_ad_forest.ps1 {{rootdomain}} {{netbios}} {{ansible_ssh_pass}}
-- name: Create Users
-  script: add_user.ps1 {{item.value.firstname}} {{item.value.surname}} {{item.value.email}} {{idpfqdn}} {{initialpassword}}
-  with_dict: users 
-
 #- include: createoustructure.yml

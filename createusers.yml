@@ -1,0 +1,7 @@
+---
+# Create AD Accounts
+- hosts: tag_class_{{env}}-adserver
+  vars_files:
+   - enc.yml
+  roles:
+   - users
