@@ -1,3 +1,5 @@
+fqdn: "ad.{{env}}.digitaltulip.net"
+idpfqdn: "iam.{{env}}.digitaltulip.net"
 rootdomain: "{{env}}.digitaltulip.net"
 users:
   adamcooper:
