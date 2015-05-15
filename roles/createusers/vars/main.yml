@@ -2,7 +2,7 @@ rootdomain: "{{env}}.digitaltulip.net"
 fqdn: "ad.{{env}}.digitaltulip.net"
 idpfqdn: "iam.{{env}}.digitaltulip.net"
 fqdsn: "DC={{env}},DC=digitaltulip,DC=net"
-netbios: "{{env}}digitaltulip"
+netbios: "{{env}}dt"
 users:
   adamcooper:
     firstname: Adam
