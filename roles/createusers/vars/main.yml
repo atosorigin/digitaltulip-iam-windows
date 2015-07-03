@@ -1,8 +1,8 @@
-rootdomain: "{{env}}.digitaltulip.net"
-fqdn: "ad.{{env}}.digitaltulip.net"
-idpfqdn: "iam.{{env}}.digitaltulip.net"
-fqdsn: "DC={{env}},DC=digitaltulip,DC=net"
-netbios: "{{env}}dt"
+rootdomain: "{{env}}.canopy-cloud.com"
+fqdn: "ad.{{env}}.canopy-cloud.com"
+idpfqdn: "iam.{{env}}.canopy-cloud.com"
+fqdsn: "DC={{env}},DC=.canopy-cloud,DC=com"
+netbios: "{{env}}cc"
 users:
   adamcooper:
     firstname: Adam
